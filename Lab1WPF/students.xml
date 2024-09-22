@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <Name>TextBox</Name>
+    <Surname>TextBox</Surname>
+    <Id>TextBox</Id>
+  </Student>
+  <Student>
+    <Name>43</Name>
+    <Surname>222</Surname>
+    <Id>444444</Id>
+  </Student>
+  <Student>
+    <Name>1</Name>
+    <Surname>2</Surname>
+    <Id>3</Id>
+    <Group>4</Group>
+  </Student>
+</ArrayOfStudent>
