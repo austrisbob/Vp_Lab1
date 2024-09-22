@@ -23,7 +23,16 @@
         <Button x:Name="btnLoad" Content="Ielādēt" HorizontalAlignment="Left" Margin="103,379,0,0" VerticalAlignment="Top" Width="65" Click="btnLoad_Click"/>
         <Button x:Name="btnSave" Content="Saglabāt" HorizontalAlignment="Left" Margin="30,379,0,0" VerticalAlignment="Top" Width="64" Click="btnSave_Click"/>
         <Button x:Name="btnAddStudent" Content="Pievienot sarakstam" HorizontalAlignment="Left" Margin="103,197,0,0" VerticalAlignment="Top" Width="134" Click="btnAddStudent_Click"/>
-        <ListView x:Name="lstStudents" HorizontalAlignment="Left" Height="113" Margin="30,248,0,0" VerticalAlignment="Top" Width="463" SelectionChanged="lstStudents_SelectionChanged_1" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ListView x:Name="lstStudents" HorizontalAlignment="Left" Height="113" Margin="30,248,0,0" VerticalAlignment="Top" Width="463" SelectionChanged="lstStudents_SelectionChanged_1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Vārds" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Uzvārds" DisplayMemberBinding="{Binding Surname}" />
+                    <GridViewColumn Header="Apl.Nr." DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="Grupa" DisplayMemberBinding="{Binding Group}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>
